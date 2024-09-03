@@ -125,3 +125,11 @@ git merge main
 git remote set-url origin https://github.com/tleeds1/periodicTable
 git remote -v
 git add .
+git commit -m "Add Periodic Table Project"
+git push origin main
+cp element.sh
+cp --help
+mv element.sh ./
+mv element.sh ..
+mv periodic_table.sql ..
+git add .
