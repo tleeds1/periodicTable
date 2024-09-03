@@ -113,3 +113,15 @@ git add .
 git commit -m "feat: complete file to pass all tests"
 git add .
 git commit -m "feat: add comments for file understanding"
+cd ..
+psql -U freecodecamp
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+mv periodic_table.sh ./periodic_table
+mv periodic_table.sql ./periodic_table
+git add .
+git commit -m "feat: add sql file"
+git remote set-url origin https://github.com/tleeds1/periodicTable
+git merge main
+git remote set-url origin https://github.com/tleeds1/periodicTable
+git remote -v
+git add .
